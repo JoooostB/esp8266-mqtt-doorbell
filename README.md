@@ -3,13 +3,14 @@ When you press a doorbell button, you complete an electrical circuit that allows
 By placing the reed sensor next to the 'dumb doorbell' you can sense it's magnetic field and integrate it in your smart home setup. Pretty neat huh?!
 
 # Project Goal:
-Sending a MQTT payload whenever the door sensor is triggered by the doorbell from the ESP8266 afterwhich a notification is sent to my phone.
+Sending a MQTT payload whenever the door sensor is triggered by the doorbell from the ESP8266 which can be read by Home Assistant. From thereon a notification event should started and notify me through Pushover's API.
 
 # Requirements:
 1. ESP8266 (Available at [Amazon][1] or [Banggood][2])
-2. Reed Door Sensor / Magnetic Contact Switch (Available at [Amazon][3] or [Banggood][4]
+2. Reed Door Sensor / Magnetic Contact Switch (Available at [Amazon][3] or [Banggood][4])
 3. Running MQTT broker (like mosquitto)
 4. Home Assistant
+5. Pushover
 
 [1]: https://amzn.to/2OsPzCd "Amazon: ESP8266 NodeMCU"
 [2]: https://www.banggood.com/NodeMcu-Lua-WIFI-Internet-Things-Development-Board-Based-ESP8266-CP2102-Wireless-Module-p-1097112.html?p=VE1712584191201405IH "Banggood: WIFI Internet Things Development Board"
