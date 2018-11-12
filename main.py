@@ -8,7 +8,7 @@ def main():
     led = m.Pin(2, m.Pin.OUT)
     sleep(3)
     led.value(1)
-    sensor = m.Pin(14, m.Pin.IN, m.Pin.PULL_UP)
+    sensor = m.Pin(GPIO, m.Pin.IN, m.Pin.PULL_UP)
     while True:
         onchange(sensor)    # When sensor state changes
         mqtt_conn()
@@ -24,7 +24,7 @@ def main():
 def onchange(sensor):
     current = sensor.value()
     active = 0
-    while active < 20:
+    while active < 5:    # 5ms because the electromagnet is triggered very short
         if sensor.value() != current:
             active += 1
         else:
