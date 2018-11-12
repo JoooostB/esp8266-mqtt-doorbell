@@ -16,7 +16,7 @@ D8=15
 '''
 
 # GPIO port connected to reed sensor
-GPIO=314
+GPIO=14
 
 # MQTT credentials
 MQTT_HOST = 'X.X.X.X'
